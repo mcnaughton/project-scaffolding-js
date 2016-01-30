@@ -10,8 +10,8 @@ module.exports = function (config) {
         singleRun: false,
         files: [
             { pattern: 'test-main.js', included: true },
-            { pattern: 'src/*.js', included: false },
-            { pattern: 'src/**/*.js', included: false },
+            { pattern: 'dist/*.js', included: false },
+            { pattern: 'dist/**/*.js', included: false },
             { pattern: 'spec/*.js', included: false },
             { pattern: 'spec/**/*.js', included: false }
         ],
@@ -21,7 +21,7 @@ module.exports = function (config) {
         ],
         reporters: ['progress', 'coverage', 'coveralls'],
         preprocessors: {
-          'src/**': ['coverage']
+          'dist/**': ['coverage']
         },
         coverageReporter: {
             type: 'lcov',

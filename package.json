@@ -28,6 +28,6 @@
   "scripts": {
     "test": "grunt requirejs && grunt karma"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Taylor Buley <admin@mcnaughton.media>",
+  "license": "MIT"
 }

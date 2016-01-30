@@ -3,6 +3,7 @@ define(['src/project'], function (project) {
     var promise = false;
     beforeEach(function(done) {
         project.then(function() {
+          promise = true;
           done()
         });
     });

@@ -11,7 +11,7 @@ define(['src/project'], function (project) {
             expect(undefined === project).toEqual(false);
         });
         it('should export a promise', function() {
-          promise = true;
+            expect(promise).toEqual(true);
         });
     });
 });

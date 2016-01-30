@@ -29,6 +29,7 @@ module.exports = function (grunt) {
                         es6: 'bower_components/requirejs-babel/es6',
                         babel: 'bower_components/requirejs-babel/babel-5.8.22.min'
                     },
+                    optimize: 'none',
                     include: ['src/project'],
                     baseUrl: '.',
                     out: 'dist/project.js',
